@@ -24,12 +24,7 @@ public class TC_login_Testcase_001 extends BaseClass{
 		driver.get(BaseUrl);
 		
 		
-		LoginPage lp = new LoginPage(driver);
-		lp.setuserName(Uname);
-		
-		lp.setPassword(Pwd);
-		
-		lp.clickSubmit();
+		LoginToCRM();
 	    
 		Thread.sleep(4000);
 		

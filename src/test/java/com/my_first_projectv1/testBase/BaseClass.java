@@ -12,6 +12,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+import com.my_first_projectv1.pageObjects.LoginPage;
+
 public class BaseClass {
 	
 	
@@ -33,6 +35,17 @@ public class BaseClass {
 	@AfterClass
 	public void Teardown() {
 		driver.quit();
+	}
+	
+	
+	public void LoginToCRM() {
+		
+		LoginPage lp = new LoginPage(driver);
+		lp.setuserName(Uname);
+		
+		lp.setPassword(Pwd);
+		
+		lp.clickSubmit();
 	}
 	
 	public void FailedTestScreenshot(String Testmethodname) throws IOException {
