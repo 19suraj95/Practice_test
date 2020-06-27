@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.my_first_projectv1.testcases.TC_login_Testcase_001">
+      <class name="com.my_first_projectv1.testcases.TC_02_Test_verifyAll_homeLink">
         <methods>
-          <include name="Setup"/>
           <include name="allHomeLinkVerify"/>
+          <include name="Setup"/>
           <include name="Teardown"/>
         </methods>
-      </class> <!-- com.my_first_projectv1.testcases.TC_login_Testcase_001 -->
+      </class> <!-- com.my_first_projectv1.testcases.TC_02_Test_verifyAll_homeLink -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
