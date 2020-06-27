@@ -18,14 +18,14 @@ public class LoginPage {
 	}
 	
     
-	@FindBy(name = "uid")
+	@FindBy(name = "email")
 	WebElement txtuserName;
 	
 	
 	@FindBy(name = "password")
 	WebElement txtPassword;
 	
-	@FindBy(name = "btnLogin")
+	@FindBy(xpath = "//div[@class ='ui fluid large blue submit button']")
 	WebElement btnLogin;
 	
 	public void setuserName(String uName) {

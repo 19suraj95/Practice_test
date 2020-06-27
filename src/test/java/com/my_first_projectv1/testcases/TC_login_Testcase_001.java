@@ -7,15 +7,16 @@ import java.util.concurrent.TimeUnit;
 
 import org.testng.AssertJUnit;
 
-
-
+import com.my_first_projectv1.Listeners.customListener;
+import com.my_first_projectv1.pageObjects.HomePage;
 import com.my_first_projectv1.pageObjects.LoginPage;
+import com.my_first_projectv1.testBase.BaseClass;
 
 @Listeners(customListener.class)
 public class TC_login_Testcase_001 extends BaseClass{
 
 	@Test
-	public void LoginTest() {
+	public void LoginTest() throws InterruptedException {
 		
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -23,28 +24,54 @@ public class TC_login_Testcase_001 extends BaseClass{
 		driver.get(BaseUrl);
 		
 		
-		logger.info("URL is Opened");
-		
 		LoginPage lp = new LoginPage(driver);
 		lp.setuserName(Uname);
 		
-		logger.info("User Name Entered Successfully");
-		
 		lp.setPassword(Pwd);
-		logger.info("Password Entered Successfully");
 		
 		lp.clickSubmit();
+	    
+		Thread.sleep(4000);
 		
-		logger.info("Clicked on Submit Button");
-		
-		if (driver.getTitle().equals("GTPL Bank Manager HomePage"))
+		if (driver.getTitle().equalsIgnoreCase("Cogmento CRM"))
 		{
 			AssertJUnit.assertTrue(true);
 		}
 		else {
 			AssertJUnit.assertTrue(false);
+			
 		}
 	}
+	
+	
+	
+	@Test
+	public void allHomeLinkVerify() throws InterruptedException {
+		
+		HomePage hp = new HomePage(driver);
+		hp.ClinkonContacts();
+		Thread.sleep(2000);
+		hp.ClinkonCalender();
+		Thread.sleep(2000);
+		hp.ClinkonCompany();
+		Thread.sleep(2000);
+		hp.ClinkonDeals();
+		Thread.sleep(2000);
+		hp.ClinkonTasks();
+		Thread.sleep(2000);
+		hp.ClinkonCases();
+		Thread.sleep(2000);
+		hp.ClinkonDocuments();
+		Thread.sleep(2000);
+		hp.ClinkonEmails();
+		Thread.sleep(2000);
+		hp.ClinkonForms();
+		Thread.sleep(2000);
+		hp.ClinkonCampaigns();
+		Thread.sleep(2000);
+	}
+	
+	
 	
 }
 
