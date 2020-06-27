@@ -41,7 +41,12 @@ public class TC_02_Test_verifyAll_homeLink extends BaseClass {
 			Thread.sleep(2000);
 			hp.ClinkonCampaigns();
 			Thread.sleep(2000);
+			
+			Logout();
 		}
+		
+	
+		 
 		
 
 	}
