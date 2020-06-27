@@ -17,6 +17,22 @@ WebDriver ldriver;
 		PageFactory.initElements(rdriver, this);
 	}
 
+	@FindBy(xpath = "//i[@class ='settings icon']")
+	WebElement settingicn;
+	
+	
+	@FindBy(xpath = "//i[@class ='power icon']")
+	WebElement logout;
+	
+	public void ClickonSettings() {
+		settingicn.click();
+		
+	}
+	
+	public void Clickonlogout() {
+		logout.click();
+		
+	}
 	
 	@FindBy(linkText = "Calendar")
 	WebElement clndr;

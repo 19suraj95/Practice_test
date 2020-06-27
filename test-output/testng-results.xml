@@ -1,25 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-06-27T00:58:11Z" name="Default suite" finished-at="2020-06-27T00:58:51Z" duration-ms="39386">
+  <suite started-at="2020-06-27T02:26:37Z" name="FREE CRM Application Test Automation Test Suite" finished-at="2020-06-27T02:27:35Z" duration-ms="57249">
     <groups>
     </groups>
-    <test started-at="2020-06-27T00:58:11Z" name="Default test" finished-at="2020-06-27T00:58:51Z" duration-ms="39386">
+    <test started-at="2020-06-27T02:26:37Z" name="Free CRM App Test Cases" finished-at="2020-06-27T02:27:35Z" duration-ms="57249">
       <class name="com.my_first_projectv1.testcases.TC_02_Test_verifyAll_homeLink">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.my_first_projectv1.testcases.TC_02_Test_verifyAll_homeLink@e350b40]" started-at="2020-06-27T00:58:11Z" name="Setup" finished-at="2020-06-27T00:58:17Z" duration-ms="5291" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.my_first_projectv1.testcases.TC_02_Test_verifyAll_homeLink@11dc3715]" started-at="2020-06-27T02:26:56Z" name="Setup" finished-at="2020-06-27T02:27:00Z" duration-ms="4856" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="allHomeLinkVerify()[pri:0, instance:com.my_first_projectv1.testcases.TC_02_Test_verifyAll_homeLink@e350b40]" started-at="2020-06-27T00:58:17Z" name="allHomeLinkVerify" finished-at="2020-06-27T00:58:49Z" duration-ms="32609" status="PASS">
+        <test-method signature="allHomeLinkVerify()[pri:0, instance:com.my_first_projectv1.testcases.TC_02_Test_verifyAll_homeLink@11dc3715]" started-at="2020-06-27T02:27:00Z" name="allHomeLinkVerify" finished-at="2020-06-27T02:27:33Z" duration-ms="33007" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allHomeLinkVerify -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:com.my_first_projectv1.testcases.TC_02_Test_verifyAll_homeLink@e350b40]" started-at="2020-06-27T00:58:49Z" name="Teardown" finished-at="2020-06-27T00:58:51Z" duration-ms="1455" status="PASS">
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:com.my_first_projectv1.testcases.TC_02_Test_verifyAll_homeLink@11dc3715]" started-at="2020-06-27T02:27:33Z" name="Teardown" finished-at="2020-06-27T02:27:35Z" duration-ms="1295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
       </class> <!-- com.my_first_projectv1.testcases.TC_02_Test_verifyAll_homeLink -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.my_first_projectv1.testcases.TC_login_Testcase_001">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.my_first_projectv1.testcases.TC_login_Testcase_001@a4102b8]" started-at="2020-06-27T02:26:38Z" name="Setup" finished-at="2020-06-27T02:26:43Z" duration-ms="5448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="LoginTest()[pri:0, instance:com.my_first_projectv1.testcases.TC_login_Testcase_001@a4102b8]" started-at="2020-06-27T02:26:43Z" name="LoginTest" finished-at="2020-06-27T02:26:54Z" duration-ms="11333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:com.my_first_projectv1.testcases.TC_login_Testcase_001@a4102b8]" started-at="2020-06-27T02:26:54Z" name="Teardown" finished-at="2020-06-27T02:26:56Z" duration-ms="1262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- com.my_first_projectv1.testcases.TC_login_Testcase_001 -->
+    </test> <!-- Free CRM App Test Cases -->
+  </suite> <!-- FREE CRM Application Test Automation Test Suite -->
 </testng-results>

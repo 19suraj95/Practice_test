@@ -10,8 +10,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 
+import com.my_first_projectv1.pageObjects.HomePage;
 import com.my_first_projectv1.pageObjects.LoginPage;
 
 public class BaseClass {
@@ -22,31 +25,38 @@ public class BaseClass {
 	public String Pwd = "Sharma5134";
 	
 	public static WebDriver driver;
-
-	
-	@BeforeClass
+     	
+	@BeforeMethod
 	public void Setup() {
 		System.setProperty("webdriver.gecko.driver", "C:\\selenuim_practice\\my_first_projectv1\\Drivers\\geckodriver.exe");
 		driver= new FirefoxDriver();
 		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
 		
 	}
 
-	@AfterClass
+	@AfterMethod
 	public void Teardown() {
 		driver.quit();
 	}
 	
 	
 	public void LoginToCRM() {
-		
 		LoginPage lp = new LoginPage(driver);
 		lp.setuserName(Uname);
-		
 		lp.setPassword(Pwd);
-		
 		lp.clickSubmit();
 	}
+	
+    public void Logout() {
+    	HomePage hp = new HomePage(driver);
+	    hp.ClickonSettings();
+		hp.Clickonlogout();;
+		
+	}
+	
+	
+	
 	
 	public void FailedTestScreenshot(String Testmethodname) throws IOException {
 		
