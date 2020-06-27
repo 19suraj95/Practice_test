@@ -5,9 +5,9 @@
     <classes>
       <class name="com.my_first_projectv1.testcases.TC_login_Testcase_001">
         <methods>
-          <include name="Teardown"/>
-          <include name="LoginTest"/>
           <include name="Setup"/>
+          <include name="allHomeLinkVerify"/>
+          <include name="Teardown"/>
         </methods>
       </class> <!-- com.my_first_projectv1.testcases.TC_login_Testcase_001 -->
     </classes>
