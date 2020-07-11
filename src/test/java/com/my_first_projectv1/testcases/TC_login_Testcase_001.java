@@ -17,6 +17,7 @@ public class TC_login_Testcase_001 extends BaseClass{
 	@Test
 	public void LoginTest() throws InterruptedException {
 		
+		test=extent.createTest("LoginTest");
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		

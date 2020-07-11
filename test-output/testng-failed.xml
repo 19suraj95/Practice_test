@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [FREE CRM Application Test Automation Test Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="com.my_first_projectv1.Listeners.customListener"/>
-  </listeners>
-  <test thread-count="5" name="Free CRM App Test Cases(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.my_first_projectv1.testcases.TC_login_Testcase_001">
+      <class name="com.my_first_projectv1.testcases.TC_02_Test_verifyAll_homeLink">
         <methods>
-          <include name="LoginTest"/>
+          <include name="allHomeLinkVerify"/>
           <include name="Setup"/>
+          <include name="SetExtent"/>
           <include name="Teardown"/>
         </methods>
-      </class> <!-- com.my_first_projectv1.testcases.TC_login_Testcase_001 -->
+      </class> <!-- com.my_first_projectv1.testcases.TC_02_Test_verifyAll_homeLink -->
     </classes>
-  </test> <!-- Free CRM App Test Cases(failed) -->
-</suite> <!-- Failed suite [FREE CRM Application Test Automation Test Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

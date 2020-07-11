@@ -8,12 +8,72 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">FREE CRM Application Test Automation Test Suite</th></tr>
-<tr><td><a href="#t0">Free CRM App Test Cases</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">57,249</td><td></td><td></td></tr>
+<tr><th colspan="7">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">106</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">FREE CRM Application Test Automation Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Free CRM App Test Cases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.my_first_projectv1.testcases.TC_02_Test_verifyAll_homeLink</td><td><a href="#m0">allHomeLinkVerify</a></td><td rowspan="1">1593224820917</td><td rowspan="1">33007</td></tr><tr class="passedodd"><td rowspan="1">com.my_first_projectv1.testcases.TC_login_Testcase_001</td><td><a href="#m1">LoginTest</a></td><td rowspan="1">1593224803451</td><td rowspan="1">11333</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.my_first_projectv1.testcases.TC_02_Test_verifyAll_homeLink</td><td><a href="#m0">SetExtent</a></td><td rowspan="1">1593378467928</td><td rowspan="1">72</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="2">com.my_first_projectv1.testcases.TC_02_Test_verifyAll_homeLink</td><td><a href="#m1">Setup</a></td><td rowspan="1">1593378468023</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">Teardown</a></td><td rowspan="1">1593378468026</td><td rowspan="1">0</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.my_first_projectv1.testcases.TC_02_Test_verifyAll_homeLink</td><td><a href="#m3">allHomeLinkVerify</a></td><td rowspan="1">1593378468024</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Free CRM App Test Cases</h2><h3 id="m0">com.my_first_projectv1.testcases.TC_02_Test_verifyAll_homeLink#allHomeLinkVerify</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.my_first_projectv1.testcases.TC_login_Testcase_001#LoginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.my_first_projectv1.testcases.TC_02_Test_verifyAll_homeLink#SetExtent</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at java.base/java.io.File.&lt;init&gt;(Unknown Source)
+	at com.aventstack.extentreports.reporter.BasicFileReporter.init(BasicFileReporter.java:106)
+	at com.aventstack.extentreports.reporter.ExtentHtmlReporter.&lt;init&gt;(ExtentHtmlReporter.java:33)
+	at com.my_first_projectv1.testBase.BaseClass.SetExtent(BaseClass.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.my_first_projectv1.testcases.TC_02_Test_verifyAll_homeLink#Setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.my_first_projectv1.testcases.TC_02_Test_verifyAll_homeLink#Teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.my_first_projectv1.testcases.TC_02_Test_verifyAll_homeLink#allHomeLinkVerify</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at java.base/java.io.File.&lt;init&gt;(Unknown Source)
+	at com.aventstack.extentreports.reporter.BasicFileReporter.init(BasicFileReporter.java:106)
+	at com.aventstack.extentreports.reporter.ExtentHtmlReporter.&lt;init&gt;(ExtentHtmlReporter.java:33)
+	at com.my_first_projectv1.testBase.BaseClass.SetExtent(BaseClass.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

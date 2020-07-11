@@ -2,17 +2,22 @@ package com.my_first_projectv1.testcases;
 
 import java.util.concurrent.TimeUnit;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.my_first_projectv1.Listeners.customListener;
 import com.my_first_projectv1.pageObjects.HomePage;
 import com.my_first_projectv1.testBase.BaseClass;
 
+
+@Listeners(customListener.class)
 public class TC_02_Test_verifyAll_homeLink extends BaseClass {
 
 	     
 		@Test
 		public void allHomeLinkVerify() throws InterruptedException {
 			
+			test=extent.createTest("allHomeLinkVerify");
 			driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		    driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			
